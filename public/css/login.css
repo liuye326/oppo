@@ -1,0 +1,214 @@
+#main{
+  width: 1000px;
+  margin:0 auto;
+}
+header{
+  display: flex;
+  height: 10rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+header a{
+  text-decoration: none;
+  color: rgb(127,127,127);
+  font-size: 14px;
+  line-height: 2rem;
+}
+.left::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.left a{
+  float: left;
+}
+.left> a + a{
+  margin-left:1.7rem;
+}
+.right>a{
+  float: left;
+}
+.right >ul{
+  margin:0 0 0 1.7rem;
+  list-style: none;
+  float: right;
+  height:32px;
+  overflow: hidden;
+  padding: 0;
+  transition: all .5s linear;
+}
+.right > ul >li+li{
+  background: rgb(245,245,245);
+  text-align: center;
+}
+.right > ul >li+li+li{
+  border-top:1px solid #fff;
+}
+.right a>img{
+  width:12px;
+  display: inline-block;
+  line-height: 32px;
+}
+.right ul.active{
+  height:135px;
+}
+#login{
+  width:29rem;
+  height:500px;
+  text-align: center;
+  margin: 0 auto;
+}
+#login .l_contain{
+  font-size:14px;
+  font-weight: 600;
+  color:gray;
+}
+#login .tab{
+  width: 80%;
+  margin:0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 20px;
+  justify-content: space-around;
+}
+#login .tab a{
+  text-decoration: none;
+  color:gray;
+  display: inline-block;
+  margin-top:0rem;
+}
+#login .tab span{
+  padding-top:0rem;
+}
+#login .tab a.active{
+  color: rgb(42,209,109);
+}
+.uname_pass{
+  margin-top:2rem;
+  padding: 4rem;
+  padding-top:2rem;
+  background: #e9e9e9;
+  border-radius: 1rem;
+}
+#login .change{
+  display: none;
+}
+#login .active{
+  display: block;
+}
+#login .input{
+  width:100%;
+  margin: 0.5rem auto 0;
+}
+#login .input:after{
+  content: "";
+  clear: both;
+}
+.input input{
+  width: 100%;
+  margin-top: 0rem;
+  font-size: 13px;
+  height: 2.5rem;
+  border:1px solid rgb(245,245,245);
+  border-radius:5px; 
+  text-indent: 1rem;
+}
+.input input:first-child{
+  margin-top:1rem;
+}
+.input input:focus{
+  outline:none;
+}
+::placeholder{
+  color:#ddd; 
+  font-size:14px;
+}
+#login .button{
+  width: 100%;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  margin-top: 0.5rem;
+  color:  rgb(245,245,245);
+  background: rgb(42,209,109);
+  border: none;
+  border-radius: 5px;
+}
+#login a{
+  display: block;
+  margin-top:2rem; 
+  text-decoration: none;
+  color: rgb(42,209,109);
+}
+#login .state{
+  width: 95%;
+  margin:0 5px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#login .state a{
+  text-decoration: none;
+  margin-top:0;
+  font-size: 12px;
+  color: rgb(90,107,151);
+}
+#login .img{
+  margin: 2rem -2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+#login .img img:first-child{
+  width:48%;
+}
+#login .img img:last-child{
+  width:46%;
+}
+.change p{
+  font-size: 14px;
+  margin: 3rem -3rem 0;
+}
+#uname_span,#upwd_span,#login_span{
+  display: block;
+  text-align: start;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+  height: 16px;
+}
+#login_span{
+  text-align: center;
+  margin-top:0.5rem;
+}
+.verify-alert{
+  top:50%;
+}
+#other{
+  display: block;
+  margin-top:2rem;
+  font-size: 14px;
+  color: rgb(155,155,155);
+}
+#other::before{
+  padding-right: 1rem;
+  content: "—————";
+  display: "block";
+}
+#other::after{
+  padding-left: 1rem;
+  content: "—————";
+  display: "block";
+}
+.change .img_l{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5rem;
+  margin-top:-1rem !important;
+} 
+.img_l img{
+  width: 25px !important;
+}
+@media screen and (max-width: 1000px){
+  #main{
+    width: 95%;
+  }
+}

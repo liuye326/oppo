@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/select_gj.css">
+  <link rel="stylesheet" href="./css/verify.css">
+  <link rel="stylesheet" href="./css/regist.css">
+</head>
+<body>
+  <!--遮罩层-->
+  <div class="body-shade" style="display:none;"></div>
+  <div id="main">
+    <header>
+      <div class="left">
+        <a href="javascript:;">OPPO官网</a>
+        <a href="javascript:;">ColorOS</a>
+        <a href="javascript:;">云服务</a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="javascript:;" class="no1">简体中文<img src="./img/open.png"></a></li>
+          <li><a href="">简体中文</a></li>
+          <li><a href="">繁體中文</a></li>
+          <li><a href="">English</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="regist">
+      <p class="title">注册&nbsp;OPPO&nbsp;账号</p>
+      <div class="content">
+        <div class="place">
+          <span class="txt1">国家/地区</span>
+          <span>|</span>
+          <select id="s1" name="country" class="fastbannerform__country"></select>
+        </div>
+        <p class="prop_txt">成功注册账号后，国家/地区将不可更改</p>
+        <div class="input">
+          <input id="uname" type="text" placeholder="请输入手机号或邮箱" autofocus>
+          <span id="uname_span"></span>
+          <input id="upwd" type="password" placeholder="请输入密码">
+          <p class="prop_txt">密码为6~16位数字、字母或下划线组成</p>
+          <input id="re_upwd" type="password" placeholder="请再次输入密码">
+          <span id="upwd_span"></span>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="check">
+          <span class="prop_txt">已阅读并同意<a href="javascript:;" class="check_a">《OPPO账号使用协议》</a> & <a href="javascript:;" class="check_a">《OPPO账号隐私声明》</a></span>
+        </div>
+        <a href="javascript:;" class="button disabled" id="btn">登录</a>
+      </div>
+    </div>
+    <!--遮罩-->
+    <div class="verify-alert verify1" style="display:none;width:360px;">
+        <p class="verify-title">拖动滑块完成安全验证</p>
+        <i class="icon-close"></i>
+        <div id="mpanel4" class="mpanel mpanelslide"></div>
+        <p class="slidefail">验证失败，请控制拼图块对齐缺口</p>
+        <div class="slidesuccess">
+            <img src="../img/slidesuccess.png" alt="">
+            <p style="color: #22ac38">验证通过</p>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery-3.2.1.js"></script>
+<script src="./js/select_gj.min.js"></script>
+<script src="./js/verify.js"></script>
+<script src="./js/regist.js"></script>
+</html>

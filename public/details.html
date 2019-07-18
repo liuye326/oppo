@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+<header></header>
+<div id="main">
+  <div id="p_header">
+    <div class="left">
+      <a href="javascript:;">Find X</a>
+    </div>
+    <div class="right">
+      <a href="javascript:;">概览</a>
+      <a href="javascript:;">技术规格</a>
+    </div>
+  </div>
+  <div id="product">
+    <!--左边：大图+5张小图-->
+    <div class="pro_left">
+      <!--根据商品信息到上边距的距离改变，默认高度为0-->
+      <div id="vary_height"></div>
+      <!--大图片-->
+      <div class="pic-lg"></div>
+      <!--小图片列表-->
+      <ul class="pic-sm"></ul>
+    </div>
+    <!--右边：商品的信息-->
+    <div class="pro_right">
+      <p class="title"></p>
+      <p class="ad_msg"><span class="ad_msg_1">【下单立减1000|到手3999|享6期免息】</span>曲面全景屏，骁龙845。<a class="ad_msg_2" href="javascript:;">Reno 10倍变焦版热卖中>>></a></p>
+      <p class="price">¥ <span class="price_content"></span></p>
+      <div class="support">
+        <span>商品支持：</span>
+        <img src="./img/hua.png" alt="">
+        <span>花呗分期 6 期免息</span>
+        <img src="./img/huan.png" alt="">
+        <span>以旧换新</span>
+      </div>
+      <div class="color">
+        <p class="color_p">颜色</p>
+        <ul class="color_ones" id="colors"></ul>
+      </div>
+      <div class="config">
+        <p class="config_p">配置</p>
+        <ul class="color_ones" id="configs"></ul>
+      </div>
+      <div class="net">
+        <p class="net_p">配置</p>
+        <ul class="color_ones">
+            <li><a href="javascript:;" class="active">全网通</a></li>
+        </ul>
+      </div>
+      <div class="serve">
+        <p class="serve_p">服务</p>
+        <ul class="color_ones">
+            <li><a href="javascript:;" class="active">延长保半年 ¥79</a></li>
+            <li><a href="javascript:;">延长保一年 ¥129</a></li>
+            <li><a href="javascript:;">屏碎保一年 ¥179</a></li>
+            <li><a href="javascript:;">后盖保一年 ¥59</a></li>
+            <li><a href="javascript:;">OPPO Care ¥249</a></li>
+        </ul>
+      </div>
+      <div class="prefer_price">
+        <div class="prefer_price_p">
+          <p>加价购</p>
+          <div class="">
+            <img src="./img/sheng.png" alt="">
+            <span>¥40.0</span>
+          </div>
+        </div>
+        
+        <div class="prefer_content">
+          <div>
+            <ul class="prefer_price_ul"></ul>
+          </div>
+          <img id="btn_left" class="disabled" src="./img/zuo.png" alt="">
+          <img id="btn_right" src="./img/you.png" alt="">
+        </div>
+      </div>
+      <div class="stages">
+        <p class="stages_p">花呗分期</p>
+        <ul class="color_ones">
+            <li><a href="java:script" class="active">
+              <span class="st_1">¥1666.33 x 3期</span>
+              <span>手续费 ¥0/期</span>
+            </a></li>
+            <li><a href="java:script">
+              <span class="st_2">¥1666.33 x 3期</span>
+              <span>手续费 ¥10.49/期</span>
+            </a></li>
+            <li><a href="java:script">
+              <span class="st_3">¥1666.33 x 3期</span>
+              <span>手续费 ¥8.74/期</span>
+            </a></li>
+        </ul>
+      </div>
+      <div class="count">
+        <p class="count_p">选择数量</p>
+        <div>
+          <img id="cut" class="disabled" src="./img/jian.png" alt="">
+          <input type="text" placeholder="选择数量" value="1">
+          <img id="plus" src="./img/jia.png" alt="">
+        </div>
+      </div>
+      <div class="btn">
+        <a href="javascript:;" class="btn_cart">加入购物车</a>
+        <a href="javascript:;" class="btn_buy">立即购买</a>
+      </div>
+    </div>
+  </div>
+  <ul id="imgs">
+    <img src="./img/img1.webp" alt="">
+    <img src="./img/img2.webp" alt="">
+    <img src="./img/img3.webp" alt="">
+    <img src="./img/img4.webp" alt="">
+    <img src="./img/img5.webp" alt="">
+    <img src="./img/img6.webp" alt="">
+    <img src="./img/img7.webp" alt="">
+    <img src="./img/img8.webp" alt="">
+    <img src="./img/img9.webp" alt="">
+  </ul>
+</div>
+<div class="shortcut">
+  <div>
+    <img src="./img/details/p_sm_1_0.webp" alt="">
+    <span id="sc_title">Find X  波尔多红</span>
+    <span id="sc_price">¥<span class="sc_price_content"></span></span>
+  </div>
+  <div>
+    <div>
+      <span class="sc_price_content">￥1899.00</span>
+      <span class="sc_count">x1</span>
+    </div>
+    <a href="#" class="buy_now">立即购买</a>
+  </div>
+</div>
+<div class="foot"><footer></footer></div>
+</body>
+  <script src="./js/jquery-3.2.1.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/details.js"></script>
+  <script src="./js/footer.js"></script>
+</html>

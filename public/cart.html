@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+<header></header>
+<div class="main">
+  <div class="tab_none">
+    <img src="./img/cart.png" alt="">
+    <p>您的购物车还是空的，快去看看吧</p>
+    <a class="btn_buy" href="index.html">去商城选购</a>
+  </div>
+  <div class="tab_notnone">
+    <p class="title">购物车</p>
+    <ul class="cart_list">
+      <li>
+        <div>
+          <img class="ischoose" src="./img/unchoose.png" data-selected="0" alt="">
+        </div>
+        <img src="./img/details/p_sm_1_0.webp" alt="">
+        <a class="p_title" href="javascript:;">A9 4G+128G 萤石紫</a>
+        <span class="p_price">￥1399.00</span>
+        <div class="count">
+          <img id="cut" class="disabled" data-state="0" src="./img/jian.png" alt="">
+          <input type="text" value="0">
+          <img id="plus" src="./img/jia.png" alt="">
+        </div>
+        <div>
+          <img class="todel" src="./img/del.png" alt="">
+        </div>
+      </li>
+      <li>
+        <div>
+          <img class="ischoose" src="./img/unchoose.png" data-selected="0" alt="">
+        </div>
+        <img src="./img/details/p_sm_1_0.webp" alt="">
+        <a class="p_title" href="javascript:;">Reno Z 6G+256G 珊瑚橙</a>
+        <span class="p_price">￥2299.00</span>
+        <div class="count">
+          <img id="cut" class="disabled" data-state="0" src="./img/jian.png" alt="">
+          <input type="text" value="0">
+          <img id="plus" src="./img/jia.png" alt="">
+        </div>
+        <div>
+          <img class="todel" src="./img/del.png" alt="">
+        </div>
+      </li>
+    </ul>
+    <div class="account">
+      <a href="javascript:;" class="account_left">
+        <img src="./img/cart_gray.png" alt="">
+        <span>继续选购</span>
+      </a>
+      <div class="account_right">
+        <p><span class="account_price">￥ 0</span></p>
+        <a class="btn_buy disabled" href="javascript:;">去结算</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="foot"><footer></footer></div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/cart.js"></script>
+</html>

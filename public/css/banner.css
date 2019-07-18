@@ -1,0 +1,114 @@
+#slide{
+    width:100%;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+    border-radius:5px;
+    text-align:center;
+}
+#imgGroup{
+    position:relative;
+}
+.banner_title{
+    position: absolute;
+    top:40%;
+    right:20%;
+}
+.banner_title>p:first-child{
+    color: #fff;
+    font-size: 3rem;
+    font-weight:500;
+}
+.banner_title>p:nth-child(2){
+    color: #fff;
+    margin-top:0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+@media screen and (max-width:1800px){
+	#slide{
+		width:100%;
+		height:auto;
+	}
+}
+#imgGroup>div{
+    width:100%;
+    height:auto;
+}
+#imgGroup img{
+    width:100%;
+    height:auto;
+}
+#imgGroup>div:first-child{
+    display:block;
+}
+#imgGroup>div+div{
+    display:none;
+}
+#clickDot{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:2;
+    width:auto;
+    height:auto;
+}
+#clickDot>div{
+    display:inline-block;
+    margin-right:20px;
+    background-color:#acb2ac;
+    width:100px;
+    height:8px;
+    border-radius:10px;
+}
+#clickDot>div>.inner_click{
+    width:0;
+    height: 100%;
+    float: left;
+    background : #aa0a0a;
+    border-radius: 10px;
+}
+#clickDot>div>.toFull{
+    width:100%;
+    transition:all 4000ms linear;
+}
+@media screen and (max-width:800px){
+	#clickDot>div{
+        width:50px;
+        height:5px;
+    }
+}
+#clickDot>div:hover{
+    cursor:pointer;
+}
+.click-dot-on{
+    background-color:#ffffff !important;
+}
+.arrow{
+    display:none;
+    width:50px;
+    height:120px;
+    line-height:120px;
+    text-align:center;
+    font-size:60px;
+    color:#666666;
+    font-weight:lighter;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background:rgba(0,0,0,.1);
+}
+.arrow:hover{
+    background:rgba(0,0,0,.3);
+    cursor:pointer;
+}
+#slide:hover .arrow{
+    display:block;
+}
+#next{
+    right:30px;
+}
+#prev{
+    left:30px;
+}
