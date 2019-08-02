@@ -13,15 +13,16 @@
 <li>使用canvas绘图与标签的事件相结合，完成登录、注册的滑块验证功能</li>
 </ol>
 
-####截图
-##### 首页
+#### 截图
+
+首页
 <img src="/readmeImg/oppo01.png" style="width:45%">
-##### 商品详情页
+商品详情页
 <img src="/readmeImg/oppo02.png" style="width:45%">
-##### 登录
+登录
 <img src="/readmeImg/oppo03.png" style="width:45%">
-##### 注册
+注册
 <img src="/readmeImg/oppo04.png" style="width:45%">
-##### 购物车
+购物车
 <img src="/readmeImg/oppo05.png" style="width:45%">
 
