@@ -14,8 +14,9 @@
 </ol>
 
 ##### 截图
-![Image text](/readmeImg/oppo01.png)
-![Image text](/readmeImg/oppo02.png)
-![Image text](/readmeImg/oppo03.png)
-![Image text](/readmeImg/oppo04.png)
-![Image text](/readmeImg/oppo05.png)
+<img src="/readmeImg/oppo01.png" style="width:45%">
+<img src="/readmeImg/oppo02.png" style="width:45%">
+<img src="/readmeImg/oppo03.png" style="width:45%">
+<img src="/readmeImg/oppo04.png" style="width:45%">
+<img src="/readmeImg/oppo05.png" style="width:45%">
+
