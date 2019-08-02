@@ -13,4 +13,5 @@
 <li>使用canvas绘图与标签的事件相结合，完成登录、注册的滑块验证功能</li>
 </ol>
 
-截图
+##### 截图
+![Image text](../readmeImg/oppo01.png)
