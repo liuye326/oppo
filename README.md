@@ -12,3 +12,5 @@
 <li>使用nodejs/express、MySQL完成服务器构建，使用CORS完成跨域问题</li>
 <li>使用canvas绘图与标签的事件相结合，完成登录、注册的滑块验证功能</li>
 </ol>
+
+截图
